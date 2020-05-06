@@ -1,0 +1,41 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields: 
+    name:
+        type: text
+        span: auto
+        label: 'Nazov: '
+    description:
+        type: richeditor
+        span: auto
+        label: 'Popis:'
+    teacher:
+        type: relation
+        span: auto
+        label: 'Ucitel:'
+    publisher: 
+        type: relation
+        span: auto
+        label: 'Autor:'
+    picture: 
+        label: 'Náhľad kurzu'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        imageWidth: '100'
+        imageHeight: '100'
+        type: fileupload
+    difficulty:
+        type: dropdown
+        options: 
+            easy: Ľahká
+            medium: Stredná
+            hard: ťažká
+        span: auto
+        label: 'Obtiaznost:'

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Kurz
+
+# Model Form Field configuration
+form: $/bednar/kurz/models/kurz/fields.yaml
+
+# Model Class name
+modelClass: Bednar\Kurz\Models\Kurz
+
+# Default redirect location
+defaultRedirect: bednar/kurz/kurz
+
+# Create page
+create:
+    title: Create Kurz
+    redirect: bednar/kurz/kurz/update/:id
+    redirectClose: bednar/kurz/kurz
+
+# Update page
+update:
+    title: Edit Kurz
+    redirect: bednar/kurz/kurz
+    redirectClose: bednar/kurz/kurz
+
+# Preview page
+preview:
+    title: Preview Kurz

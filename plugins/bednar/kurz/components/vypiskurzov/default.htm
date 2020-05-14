@@ -1,0 +1,13 @@
+{%  set kurzs = __SELF__.kurzs %}
+<style>
+    table, tr, td {
+      border: 1px solid black;
+    }
+    </style>
+<ul>
+    {% for kurz in kurzs %}
+
+      <li><b>{{ kurz.name }}</b> <br>{{ kurz.description }}<!--<td>{{ kurz.teacher_id }}<td>{{ kurz.difficulty }}--></li>
+    <br>
+    {% endfor %}
+</ul>

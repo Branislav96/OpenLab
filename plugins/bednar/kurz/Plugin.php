@@ -23,6 +23,14 @@ class Plugin extends PluginBase
         ];
     }
 
+    public function registerComponents()
+    {
+        return [
+            'bednar\kurz\Components\files' => 'files',
+            'bednar\kurz\Components\vypisKurzov' => 'kurzy'
+        ];
+    }
+
     /**
      * Register method, called when the plugin is first registered.
      *
@@ -48,6 +56,8 @@ class Plugin extends PluginBase
      *
      * @return array
      */
+    
+     /*
     public function registerComponents()
     {
         return []; // Remove this line to activate
@@ -56,7 +66,7 @@ class Plugin extends PluginBase
             'bednar\kurz\components\files' => 'Files',
         ];
     }
-
+*/
     /**
      * Registers any back-end permissions used by this plugin.
      *

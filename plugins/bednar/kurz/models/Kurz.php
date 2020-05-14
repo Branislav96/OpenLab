@@ -74,5 +74,7 @@ class Kurz extends Model
     public $attachOne = [
         'picture' => 'System\Models\File',
     ];
-    public $attachMany = [];
+    public $attachMany = [
+        'picture' => 'System\Models\File'
+    ];
 }

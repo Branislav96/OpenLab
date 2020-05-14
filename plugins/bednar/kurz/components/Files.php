@@ -1,8 +1,9 @@
-<?php namespace \Bednar\kurz\Components;
+<?php namespace Bednar\kurz\Components;
 
 use Cms\Classes\ComponentBase;
+use Bednar\kurz\Models\kurz;
 
-class Files extends ComponentBase
+class files extends ComponentBase
 {
     public function componentDetails()
     {
@@ -11,11 +12,12 @@ class Files extends ComponentBase
             'description' => 'Files'
         ];
     }
-
+    /*
     public function defineProperties()
     {
         return [];
     }
+    */
 
     public function onRun(){
 
@@ -24,7 +26,7 @@ class Files extends ComponentBase
 
     protected function loadFiles(){
 
-        return Files::all();
+        return files::all();
     }
 
     public $files;

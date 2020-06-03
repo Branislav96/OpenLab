@@ -12,13 +12,13 @@ class files extends ComponentBase
             'description' => 'Files'
         ];
     }
-    /*
+    
     public function defineProperties()
     {
         return [];
     }
-    */
-
+    
+/*
     public function onRun(){
 
         $this->files = $this->loadFiles();
@@ -27,7 +27,17 @@ class files extends ComponentBase
     protected function loadFiles(){
 
         return files::all();
-    }
-
+        //return files::all();
+        // $product = Product::find($this->id);
+        //$product = $this->find($this->id);
+    }*/
+/*
+    public function getImageAttribute()
+{
+        // $product = Product::find($this->id);
+        $image = $this->find($this->id);
+        return '<img src="'.$image->image[0]->getThumb(50, 50, 'crop').'" />';
+}
+*/
     public $files;
 }

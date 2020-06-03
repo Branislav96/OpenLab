@@ -7,7 +7,7 @@
 <ul>
     {% for kurz in kurzs %}
 
-      <li><b>{{ kurz.name }}</b> <br>{{ kurz.description }}<!--<td>{{ kurz.teacher_id }}<td>{{ kurz.difficulty }}--></li>
+      <li><b>{{ kurz.name }}</b> <br> {{ kurz.description }} <br> <img src="{{ kurz.picture.path }}"><!--<td>{{ kurz.teacher_id }}<td>{{ kurz.difficulty }}--></li>
     <br>
     {% endfor %}
 </ul>

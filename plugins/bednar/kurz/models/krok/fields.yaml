@@ -1,8 +1,30 @@
-# ===================================
-#  Form Field Definitions
-# ===================================
-
 fields:
-    id:
-        label: ID
-        disabled: true
+    kurz:
+        type: relation
+        span: auto
+        label: 'Kurz:'
+    name: 
+        type: text
+        span: auto
+        label: 'Názov kroku: '
+    introduction:
+        type: richeditor
+        span: auto
+        label: 'Úvod: '
+    video_link:
+        type: text
+        span: auto
+        label: 'Link na video:  '
+    google_link:
+        type: text
+        span: auto
+        label: 'Link na Google docs: '
+    description:
+        type: richeditor
+        span: auto
+        label: 'Popis: '
+    pozition:
+        type: number
+        span: auto
+        label: 'Pozícia kroku: '
+        

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Krok
+
+# Model Form Field configuration
+form: $/bednar/kurz/models/krok/fields.yaml
+
+# Model Class name
+modelClass: Bednar\Kurz\Models\Krok
+
+# Default redirect location
+defaultRedirect: bednar/kurz/krok
+
+# Create page
+create:
+    title: Create Krok
+    redirect: bednar/kurz/krok/update/:id
+    redirectClose: bednar/kurz/krok
+
+# Update page
+update:
+    title: Edit Krok
+    redirect: bednar/kurz/krok
+    redirectClose: bednar/kurz/krok
+
+# Preview page
+preview:
+    title: Preview Krok

@@ -71,10 +71,15 @@ class Kurz extends Model
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];
-    public $attachOne = [
-        'picture' => 'System\Models\File',
-    ];
+    public $attachOne = [];
     public $attachMany = [
         'picture' => 'System\Models\File'
     ];
+
+  /*  public function getImageAttribute()
+    {
+            // $product = Product::find($this->id);
+            $file = $this->find($this->id);
+            return '<img src="'.$file->image[0]->getThumb(50, 50, 'crop').'" />';
+    }*/
 }

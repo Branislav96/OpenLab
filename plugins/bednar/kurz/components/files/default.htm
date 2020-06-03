@@ -1,7 +1,20 @@
-{%  set actors = __SELF__.actors %}
-
+{%  set kurzs = __SELF__.kurzs %}
+<style>
+    table, tr, td {
+      border: 1px solid black;
+    }
+    </style>
 <ul>
-    {% for actor in actors %}
-        <li>{{ actor.name }} {{ actor.lastname }}</li>
+    {% for kurz in kurzs %}
+
+      <li>'img src="{{ record.image.path }}"'<!--<td>{{ kurz.teacher_id }}<td>{{ kurz.difficulty }}-->
+    </li>
+    <br>
     {% endfor %}
 </ul>
+
+<!--
+{% for kurz in kurzs %}
+   <img src="{{ image.thumb(100, auto) }}">
+{% endfor %}
+-->

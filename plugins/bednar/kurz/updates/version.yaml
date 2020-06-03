@@ -3,5 +3,8 @@
   - create_kurzs_table.php
 1.0.2: 
   - create_kurzs_table.php
-1.0.3:
+1.0.3.4: 
+  - "bednar_kurz_kroks"
+  - create_kroks_table.php
+2.1.4: 
   - create_kroks_table.php

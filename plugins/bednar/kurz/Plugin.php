@@ -100,6 +100,13 @@ class Plugin extends PluginBase
                 'permissions' => ['bednar.kurz.*'],
                 'order'       => 500,
             ],
+            'krok' => [
+                'label'       => 'krok',
+                'url'         => Backend::url('bednar/kurz/krok'),
+                'icon'        => 'icon-leaf',
+                'permissions' => ['bednar.kurz.*'],
+                'order'       => 500,
+            ]
         ];
     }
 }
